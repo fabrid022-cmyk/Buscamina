@@ -107,7 +107,6 @@ gcc main.c funciones_buscaminas.c -o Buscamina \
 -LC:/SDL2/SDL2_ttf-2.22.0/lib \
 -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
 Ejecutar
-
 ./Buscamina.exe
 </details>
 
@@ -120,8 +119,8 @@ sudo apt install build-essential libsdl2-dev libsdl2-ttf-dev
 Compilación
 
 gcc main.c funciones_buscaminas.c -o Buscamina `sdl2-config --cflags --libs` -lSDL2_ttf
-Ejecutar
 
+Ejecutar
 ./Buscamina
 </details>
 
