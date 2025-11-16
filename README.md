@@ -75,34 +75,30 @@ Extraer los archivos en una carpeta accesible, por ejemplo `C:/SDL2`.
 
 ### 💻 Instalación y configuración
 
-<details> <summary>🖥️ Windows (MinGW / Code::Blocks)</summary>
+<details>
+<summary>🖥️ Windows (MinGW / Code::Blocks)</summary>
 
-Configuración en Code::Blocks
-Abrir Code::Blocks → Settings → Compiler → Global compiler settings.
+#### Configuración en Code::Blocks
+1.  Abrir **Code::Blocks → Settings → Compiler → Global compiler settings**.
+2.  En **Search directories → Compiler**, agregar:
+    ```text
+    C:/SDL2/SDL2-2.0.22/include
+    C:/SDL2/SDL2_ttf-2.22.0/include
+    ```
+3.  En **Search directories → Linker**, agregar:
+    ```text
+    C:/SDL2/SDL2-2.0.22/lib
+    C:/SDL2/SDL2_ttf-2.22.0/lib
+    ```
+4.  En **Project → Build options → Linker settings**, agregar:
+    ```text
+    SDL2main
+    SDL2
+    SDL2_ttf
+    ```
+5.  Copiar los archivos **SDL2.dll** y **SDL2_ttf.dll** al directorio del ejecutable.
 
-En Search directories → Compiler, agregar:
-
-Plaintext
-
-C:/SDL2/SDL2-2.0.22/include
-C:/SDL2/SDL2_ttf-2.22.0/include
-En Search directories → Linker, agregar:
-
-Plaintext
-
-C:/SDL2/SDL2-2.0.22/lib
-C:/SDL2/SDL2_ttf-2.22.0/lib
-En Project → Build options → Linker settings, agregar:
-
-Plaintext
-
-SDL2main
-SDL2
-SDL2_ttf
-Copiar los archivos SDL2.dll y SDL2_ttf.dll al directorio del ejecutable.
-
-Compilación desde terminal
-Bash
+#### Compilación desde terminal
 
 gcc main.c funciones_buscaminas.c -o Buscamina \
 -IC:/SDL2/SDL2-2.0.22/include \
@@ -111,47 +107,43 @@ gcc main.c funciones_buscaminas.c -o Buscamina \
 -LC:/SDL2/SDL2_ttf-2.22.0/lib \
 -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
 Ejecutar
-Bash
 
 ./Buscamina.exe
 </details>
 
-
 <details> <summary>🐧 Linux</summary>
 
 Instalación de dependencias
-Bash
 
 sudo apt update
 sudo apt install build-essential libsdl2-dev libsdl2-ttf-dev
 Compilación
-Bash
 
 gcc main.c funciones_buscaminas.c -o Buscamina `sdl2-config --cflags --libs` -lSDL2_ttf
 Ejecutar
-Bash
 
 ./Buscamina
 </details>
+
 📂 Archivos importantes
-main.c → Entrada principal.
+main.c → Entrada principal del programa.
 
-funciones_buscaminas.c / buscaminas_header.h → Lógica del Buscaminas y estructuras.
+funciones_buscaminas.c / buscaminas_header.h → Contiene la lógica del Buscaminas y las estructuras de datos.
 
-buscamina.config.txt → Configuración inicial del tablero.
+buscamina.config.txt → Archivo para la configuración inicial del tablero.
 
 🎮 Uso
 Ejecutar el juego.
 
-Seleccionar dificultad o personalizar el tablero desde el menú.
+Seleccionar la dificultad o personalizar el tablero desde el menú.
 
-Clic izquierdo: descubrir casilla
+Clic izquierdo: descubrir casilla.
 
-Clic derecho: marcar mina
+Clic derecho: marcar mina.
 
 El juego termina al descubrir todas las casillas seguras o al explotar una mina.
 
 📝 Licencia
 MIT License © 2025 Fabrizio Del Vecchio
 
-Se permite usar, modificar y redistribuir, siempre mencionando al autor.
+Se permite usar, modificar y redistribuir el código, siempre mencionando al autor original.
