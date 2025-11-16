@@ -1,6 +1,3 @@
-# Buscamina
-Este proyecto es una implementación del clásico juego Buscaminas, desarrollado en C utilizando la biblioteca SDL2 para gráficos y manejo de eventos. Permite al usuario configurar el tamaño del tablero y la cantidad de minas, iniciar partidas nuevas, continuar partidas guardadas y personalizar algunos ajustes del juego.
-
 # 🎮 Buscamina en C con SDL2
 
 [![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)  
@@ -52,6 +49,8 @@ Buscamina/
 ├─ README.md # Documentación del proyecto
 └─ .gitignore # Archivos y carpetas ignoradas por Git
 
+yaml
+Copiar código
 
 ---
 
@@ -77,35 +76,35 @@ Extraer los archivos en una carpeta accesible, por ejemplo `C:/SDL2`.
 ### Configuración en Code::Blocks
 1. Abrir **Code::Blocks** → **Settings** → **Compiler** → **Global compiler settings**  
 2. En **Search directories → Compiler**, agregar:  
-```text
 C:/SDL2/SDL2-2.0.22/include
 C:/SDL2/SDL2_ttf-2.22.0/include
-En Search directories → Linker, agregar:
 
-text
+markdown
 Copiar código
+3. En **Search directories → Linker**, agregar:  
 C:/SDL2/SDL2-2.0.22/lib
 C:/SDL2/SDL2_ttf-2.22.0/lib
-En Project → Build options → Linker settings, agregar:
 
-text
+markdown
 Copiar código
+4. En **Project → Build options → Linker settings**, agregar:  
 SDL2main
 SDL2
 SDL2_ttf
-Copiar los archivos SDL2.dll y SDL2_ttf.dll al directorio del ejecutable.
 
-Compilación desde terminal
 bash
 Copiar código
-gcc main.c juego.c menu.c -o Buscamina \
+5. Copiar los archivos `SDL2.dll` y `SDL2_ttf.dll` al directorio del ejecutable.
+
+### Compilación desde terminal
+```bash
+gcc main.c funciones_buscaminas.c -o Buscamina \
 -IC:/SDL2/SDL2-2.0.22/include \
 -IC:/SDL2/SDL2_ttf-2.22.0/include \
 -LC:/SDL2/SDL2-2.0.22/lib \
 -LC:/SDL2/SDL2_ttf-2.22.0/lib \
 -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
-Ejecutar:
-
+Ejecutar
 bash
 Copiar código
 ./Buscamina.exe
@@ -118,24 +117,20 @@ sudo apt install build-essential libsdl2-dev libsdl2-ttf-dev
 Compilación
 bash
 Copiar código
-gcc main.c juego.c menu.c -o Buscamina `sdl2-config --cflags --libs` -lSDL2_ttf
+gcc main.c funciones_buscaminas.c -o Buscamina `sdl2-config --cflags --libs` -lSDL2_ttf
 Ejecutar
 bash
 Copiar código
 ./Buscamina
-</details> ```
+</details>
 📂 Archivos importantes
-
 main.c → Entrada principal.
 
-juego.c / juego.h → Lógica del Buscaminas.
+funciones_buscaminas.c / buscaminas_header.h → Lógica del Buscaminas y estructuras.
 
-menu.c / menu.h → Funciones del menú.
-
-buscamina.config.txt → Configuración inicial.
+buscamina.config.txt → Configuración inicial del tablero.
 
 🎮 Uso
-
 Ejecutar el juego.
 
 Seleccionar dificultad o personalizar el tablero desde el menú.
@@ -147,7 +142,6 @@ Clic derecho: marcar mina
 El juego termina al descubrir todas las casillas seguras o al explotar una mina.
 
 📝 Licencia
-
 MIT License © 2025 Fabrizio Del Vecchio
 
 Se permite usar, modificar y redistribuir, siempre mencionando al autor.
