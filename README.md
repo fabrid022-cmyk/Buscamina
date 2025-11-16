@@ -1,7 +1,7 @@
 # Buscamina
 Este proyecto es una implementación del clásico juego Buscaminas, desarrollado en C utilizando la biblioteca SDL2 para gráficos y manejo de eventos. Permite al usuario configurar el tamaño del tablero y la cantidad de minas, iniciar partidas nuevas, continuar partidas guardadas y personalizar algunos ajustes del juego.
 
-# 🎮 Buscaminas en C con SDL2
+# 🎮 Buscamina en C con SDL2
 
 [![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)  
 [![C](https://img.shields.io/badge/language-C-blue)](https://github.com/fabrid022-cmyk/Buscamina)  
@@ -31,6 +31,30 @@ Repositorio: [https://github.com/fabrid022-cmyk/Buscamina](https://github.com/fa
 
 ---
 
+## 📂 Estructura del proyecto
+
+Buscamina/
+├─ src/ # Código fuente
+│ ├─ main.c # Entrada principal del juego
+│ ├─ funciones_buscaminas.c # Lógica del Buscaminas
+│ ├─ buscaminas_header.h # Header con definiciones y estructuras
+│ └─ buscamina.config.txt # Configuración inicial del tablero
+├─ resources/ # Recursos gráficos y fuentes
+│ ├─ logo.bmp # Logo del juego
+│ └─ arialbd.ttf # Fuente utilizada en el juego
+├─ project/ # Archivos del proyecto de Code::Blocks
+│ ├─ buscaminas_implementacion.cbp
+│ ├─ buscaminas_implementacion.layout
+│ └─ buscaminas_implementacion.depend
+├─ saves/ # Archivos de partidas (opcional)
+│ ├─ ultDiez.txt # Registro de los últimos 10 juegos
+│ └─ ultima_partida # Última partida guardada
+├─ README.md # Documentación del proyecto
+└─ .gitignore # Archivos y carpetas ignoradas por Git
+
+
+---
+
 ## 🛠 Requisitos
 - Compilador **C** (GCC / MinGW)  
 - **Code::Blocks** (opcional)  
@@ -41,7 +65,7 @@ Repositorio: [https://github.com/fabrid022-cmyk/Buscamina](https://github.com/fa
 - SDL2: [https://www.libsdl.org/download-2.0.php](https://www.libsdl.org/download-2.0.php) → `SDL2-devel-2.0.22-mingw.tar.gz`  
 - SDL2_ttf: [https://www.libsdl.org/projects/SDL_ttf/](https://www.libsdl.org/projects/SDL_ttf/) → `SDL2_ttf-devel-2.22.0-mingw.tar.gz`  
 
-Extraer los archivos en una carpeta accesible, por ejemplo `C:\SDL2`.
+Extraer los archivos en una carpeta accesible, por ejemplo `C:/SDL2`.
 
 ---
 
@@ -53,11 +77,11 @@ Extraer los archivos en una carpeta accesible, por ejemplo `C:\SDL2`.
 ### Configuración en Code::Blocks
 1. Abrir **Code::Blocks** → **Settings** → **Compiler** → **Global compiler settings**.  
 2. En **Search directories** → **Compiler**, agregar:  
-C:\SDL2\SDL2-2.0.22\include
-C:\SDL2\SDL2_ttf-2.22.0\include
+C:/SDL2/SDL2-2.0.22/include
+C:/SDL2/SDL2_ttf-2.22.0/include
 3. En **Search directories** → **Linker**, agregar:  
-C:\SDL2\SDL2-2.0.22\lib
-C:\SDL2\SDL2_ttf-2.22.0\lib
+C:/SDL2/SDL2-2.0.22/lib
+C:/SDL2/SDL2_ttf-2.22.0/lib
 4. En **Project** → **Build options** → **Linker settings**, agregar:  
 SDL2main
 SDL2
@@ -67,14 +91,16 @@ SDL2_ttf
 ### Compilación desde terminal
 ```bash
 gcc main.c juego.c menu.c -o Buscamina \
--IC:\SDL2\SDL2-2.0.22\include \
--IC:\SDL2\SDL2_ttf-2.22.0\include \
--LC:\SDL2\SDL2-2.0.22\lib \
--LC:\SDL2\SDL2_ttf-2.22.0\lib \
+-IC:/SDL2/SDL2-2.0.22/include \
+-IC:/SDL2/SDL2_ttf-2.22.0/include \
+-LC:/SDL2/SDL2-2.0.22/lib \
+-LC:/SDL2/SDL2_ttf-2.22.0/lib \
 -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
 
 Ejecutar:
 ./Buscamina.exe
+
+</details> <details> <summary>Linux</summary>
 
 Instalación de dependencias
 sudo apt update
@@ -84,8 +110,8 @@ Compilación
 gcc main.c juego.c menu.c -o Buscamina `sdl2-config --cflags --libs` -lSDL2_ttf
 
 Ejecutar:
+
 ./Buscamina
-</details>
 
 
 📂 Archivos importantes
@@ -109,7 +135,6 @@ Clic izquierdo: descubrir casilla
 Clic derecho: marcar mina
 
 El juego termina al descubrir todas las casillas seguras o al explotar una mina.
-
 
 📝 Licencia
 
