@@ -102,7 +102,9 @@ Ejecutar:
 
 </details>
 
-<details> <summary>Linux</summary>
+
+<details>
+<summary>Linux</summary>
 
 Instalación de dependencias
 sudo apt update
