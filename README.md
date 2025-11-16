@@ -73,9 +73,9 @@ Extraer los archivos en una carpeta accesible, por ejemplo `C:/SDL2`.
 
 ---
 
-💻 Instalación y configuración
-🖥️ Windows (MinGW / Code::Blocks)
-<details> <summary>Hacer clic para ver la configuración de Windows</summary>
+### 💻 Instalación y configuración
+
+<details> <summary>🖥️ Windows (MinGW / Code::Blocks)</summary>
 
 Configuración en Code::Blocks
 Abrir Code::Blocks → Settings → Compiler → Global compiler settings.
@@ -116,8 +116,8 @@ Bash
 ./Buscamina.exe
 </details>
 
-🐧 Linux
-<details> <summary>Hacer clic para ver la configuración de Linux</summary>
+
+<details> <summary>🐧 Linux</summary>
 
 Instalación de dependencias
 Bash
