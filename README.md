@@ -73,35 +73,37 @@ Extraer los archivos en una carpeta accesible, por ejemplo `C:/SDL2`.
 
 ---
 
-## 💻 Instalación y configuración
+💻 Instalación y configuración
+🖥️ Windows (MinGW / Code::Blocks)
+<details> <summary>Hacer clic para ver la configuración de Windows</summary>
 
-<details>
-<summary>Windows (MinGW / Code::Blocks)</summary>
+Configuración en Code::Blocks
+Abrir Code::Blocks → Settings → Compiler → Global compiler settings.
 
-### Configuración en Code::Blocks
-1. Abrir **Code::Blocks → Settings → Compiler → Global compiler settings**  
-2. En **Search directories → Compiler**, agregar:
-```text
+En Search directories → Compiler, agregar:
+
+Plaintext
+
 C:/SDL2/SDL2-2.0.22/include
 C:/SDL2/SDL2_ttf-2.22.0/include
 En Search directories → Linker, agregar:
 
-text
-Copiar código
+Plaintext
+
 C:/SDL2/SDL2-2.0.22/lib
 C:/SDL2/SDL2_ttf-2.22.0/lib
 En Project → Build options → Linker settings, agregar:
 
-text
-Copiar código
+Plaintext
+
 SDL2main
 SDL2
 SDL2_ttf
 Copiar los archivos SDL2.dll y SDL2_ttf.dll al directorio del ejecutable.
 
 Compilación desde terminal
-bash
-Copiar código
+Bash
+
 gcc main.c funciones_buscaminas.c -o Buscamina \
 -IC:/SDL2/SDL2-2.0.22/include \
 -IC:/SDL2/SDL2_ttf-2.22.0/include \
@@ -109,22 +111,26 @@ gcc main.c funciones_buscaminas.c -o Buscamina \
 -LC:/SDL2/SDL2_ttf-2.22.0/lib \
 -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
 Ejecutar
-bash
-Copiar código
+Bash
+
 ./Buscamina.exe
-</details> <details> <summary>Linux</summary>
+</details>
+
+🐧 Linux
+<details> <summary>Hacer clic para ver la configuración de Linux</summary>
+
 Instalación de dependencias
-bash
-Copiar código
+Bash
+
 sudo apt update
 sudo apt install build-essential libsdl2-dev libsdl2-ttf-dev
 Compilación
-bash
-Copiar código
+Bash
+
 gcc main.c funciones_buscaminas.c -o Buscamina `sdl2-config --cflags --libs` -lSDL2_ttf
 Ejecutar
-bash
-Copiar código
+Bash
+
 ./Buscamina
 </details>
 📂 Archivos importantes
