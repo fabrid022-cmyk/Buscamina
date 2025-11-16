@@ -74,30 +74,29 @@ Extraer los archivos en una carpeta accesible, por ejemplo `C:/SDL2`.
 <summary>Windows (MinGW / Code::Blocks)</summary>
 
 ### Configuración en Code::Blocks
-1. Abrir **Code::Blocks** → **Settings** → **Compiler** → **Global compiler settings**  
-2. En **Search directories → Compiler**, agregar:  
+1. Abrir **Code::Blocks → Settings → Compiler → Global compiler settings**  
+2. En **Search directories → Compiler**, agregar:
+```text
 C:/SDL2/SDL2-2.0.22/include
 C:/SDL2/SDL2_ttf-2.22.0/include
+En Search directories → Linker, agregar:
 
-markdown
+text
 Copiar código
-3. En **Search directories → Linker**, agregar:  
 C:/SDL2/SDL2-2.0.22/lib
 C:/SDL2/SDL2_ttf-2.22.0/lib
+En Project → Build options → Linker settings, agregar:
 
-markdown
+text
 Copiar código
-4. En **Project → Build options → Linker settings**, agregar:  
 SDL2main
 SDL2
 SDL2_ttf
+Copiar los archivos SDL2.dll y SDL2_ttf.dll al directorio del ejecutable.
 
+Compilación desde terminal
 bash
 Copiar código
-5. Copiar los archivos `SDL2.dll` y `SDL2_ttf.dll` al directorio del ejecutable.
-
-### Compilación desde terminal
-```bash
 gcc main.c funciones_buscaminas.c -o Buscamina \
 -IC:/SDL2/SDL2-2.0.22/include \
 -IC:/SDL2/SDL2_ttf-2.22.0/include \
@@ -108,9 +107,7 @@ Ejecutar
 bash
 Copiar código
 ./Buscamina.exe
-</details>
-<details>
-<summary>Linux</summary>
+</details> <details> <summary>Linux</summary>
 Instalación de dependencias
 bash
 Copiar código
@@ -125,7 +122,6 @@ bash
 Copiar código
 ./Buscamina
 </details>
-
 📂 Archivos importantes
 main.c → Entrada principal.
 
