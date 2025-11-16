@@ -100,7 +100,9 @@ gcc main.c juego.c menu.c -o Buscamina \
 Ejecutar:
 ./Buscamina.exe
 
-</details> <details> <summary>Linux</summary>
+</details>
+
+<details> <summary>Linux</summary>
 
 Instalación de dependencias
 sudo apt update
@@ -113,6 +115,7 @@ Ejecutar:
 
 ./Buscamina
 
+</details>
 
 📂 Archivos importantes
 
