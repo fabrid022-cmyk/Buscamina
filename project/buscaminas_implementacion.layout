@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="funciones_buscaminas.c" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1582" topLine="27" />
+		</Cursor>
+		<Folding>
+			<Collapse line="4" />
+			<Collapse line="141" />
+			<Collapse line="306" />
+			<Collapse line="619" />
+			<Collapse line="648" />
+			<Collapse line="780" />
+			<Collapse line="845" />
+			<Collapse line="907" />
+			<Collapse line="984" />
+			<Collapse line="1009" />
+			<Collapse line="1031" />
+			<Collapse line="1051" />
+			<Collapse line="1058" />
+			<Collapse line="1076" />
+			<Collapse line="1113" />
+			<Collapse line="1142" />
+			<Collapse line="1155" />
+			<Collapse line="1240" />
+			<Collapse line="1275" />
+			<Collapse line="1303" />
+			<Collapse line="1321" />
+			<Collapse line="1335" />
+			<Collapse line="1489" />
+			<Collapse line="1519" />
+			<Collapse line="1570" />
+			<Collapse line="1609" />
+			<Collapse line="1651" />
+			<Collapse line="1680" />
+			<Collapse line="1703" />
+			<Collapse line="1730" />
+			<Collapse line="1745" />
+			<Collapse line="1760" />
+			<Collapse line="1772" />
+			<Collapse line="1869" />
+			<Collapse line="1958" />
+			<Collapse line="1976" />
+			<Collapse line="2101" />
+			<Collapse line="2120" />
+		</Folding>
+	</File>
+	<File name="buscaminas_header.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="572" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5631" topLine="60" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="16" />
+			<Collapse line="29" />
+			<Collapse line="42" />
+			<Collapse line="55" />
+			<Collapse line="68" />
+			<Collapse line="81" />
+			<Collapse line="94" />
+			<Collapse line="107" />
+			<Collapse line="120" />
+			<Collapse line="133" />
+			<Collapse line="146" />
+			<Collapse line="159" />
+			<Collapse line="172" />
+			<Collapse line="185" />
+			<Collapse line="198" />
+		</Folding>
+	</File>
+</CodeBlocks_layout_file>
