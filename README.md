@@ -108,7 +108,9 @@ Ejecutar
 bash
 Copiar código
 ./Buscamina.exe
-</details> <details> <summary>Linux</summary>
+</details>
+<details>
+<summary>Linux</summary>
 Instalación de dependencias
 bash
 Copiar código
@@ -123,6 +125,7 @@ bash
 Copiar código
 ./Buscamina
 </details>
+
 📂 Archivos importantes
 main.c → Entrada principal.
 
