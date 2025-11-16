@@ -34,24 +34,28 @@ Repositorio: [https://github.com/fabrid022-cmyk/Buscamina](https://github.com/fa
 
 ## 📂 Estructura del proyecto
 
-Buscamina/
-├─ src/ # Código fuente
-│ ├─ main.c # Entrada principal del juego
-│ ├─ funciones_buscaminas.c # Lógica del Buscaminas
-│ ├─ buscaminas_header.h # Header con definiciones y estructuras
-│ └─ buscamina.config.txt # Configuración inicial del tablero
-├─ resources/ # Recursos gráficos y fuentes
-│ ├─ logo.bmp # Logo del juego
-│ └─ arialbd.ttf # Fuente utilizada en el juego
-├─ project/ # Archivos del proyecto de Code::Blocks
-│ ├─ buscaminas_implementacion.cbp
-│ ├─ buscaminas_implementacion.layout
-│ └─ buscaminas_implementacion.depend
-├─ saves/ # Archivos de partidas (opcional)
-│ ├─ ultDiez.txt # Registro de los últimos 10 juegos
-│ └─ ultima_partida # Última partida guardada
-├─ README.md # Documentación del proyecto
-└─ .gitignore # Archivos y carpetas ignoradas por Git
+- **src/** – Código fuente
+  - `main.c` – Entrada principal del juego
+  - `funciones_buscaminas.c` – Lógica del Buscaminas
+  - `buscamina_header.h` – Header con definiciones y estructuras
+  - `buscamina.config.txt` – Configuración inicial del tablero
+
+- **resources/** – Recursos gráficos y fuentes
+  - `logo.bmp` – Logo del juego
+  - `arialbd.ttf` – Fuente utilizada en el juego
+
+- **project/** – Archivos del proyecto de Code::Blocks
+  - `buscamina_implementacion.cbp`
+  - `buscamina_implementacion.layout`
+  - `buscamina_implementacion.depend`
+
+- **saves/** – Archivos de partidas (opcional)
+  - `ultDiez.txt` – Registro de los últimos 10 juegos
+  - `ultima_partida` – Última partida guardada
+
+- `README.md` – Documentación del proyecto
+- `.gitignore` – Archivos y carpetas ignoradas por Git
+
 
 ---
 
