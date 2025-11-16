@@ -53,9 +53,6 @@ Buscamina/
 ├─ README.md # Documentación del proyecto
 └─ .gitignore # Archivos y carpetas ignoradas por Git
 
-yaml
-Copiar código
-
 ---
 
 ## 🛠 Requisitos
